@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Malla RRII</title>
+
+<style>
+
+body{
+font-family: "Segoe UI", sans-serif;
+background:#eef2f7;
+margin:0;
+padding:30px;
+}
+
+h1{
+text-align:center;
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.year{
+padding:20px;
+border-radius:14px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+color:white;
+}
+
+.year h2{
+margin-top:0;
+}
+
+.y1{background:#3b82f6;}
+.y2{background:#10b981;}
+.y3{background:#f59e0b;}
+.y4{background:#ef4444;}
+
+.subject{
+background:white;
+color:#333;
+padding:10px;
+border-radius:8px;
+margin:6px 0;
+cursor:pointer;
+transition:0.2s;
+}
+
+.subject:hover{
+transform:scale(1.03);
+}
+
+.subject.done{
+background:#22c55e;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Malla Relaciones Internacionales</h1>
+
+<div class="grid">
+
+<div class="year y1">
+<h2>1° Año</h2>
+
+<div class="subject">Economía</div>
+<div class="subject">Filosofía I</div>
+<div class="subject">Historia del Mundo Contemporáneo</div>
+<div class="subject">Introducción a la Ciencia Política</div>
+<div class="subject">Introducción a las Relaciones Internacionales</div>
+<div class="subject">TIC</div>
+<div class="subject">Ciencia Política</div>
+<div class="subject">Filosofía II</div>
+<div class="subject">Historia Contemporánea de América Latina</div>
+<div class="subject">Inglés I</div>
+<div class="subject">Introducción al Derecho</div>
+<div class="subject">Introducción al Sistema Internacional</div>
+<div class="subject">Taller de Escritura y Oratoria</div>
+
+</div>
+
+<div class="year y2">
+<h2>2° Año</h2>
+
+<div class="subject">Geografía Económica</div>
+<div class="subject">Historia Argentina Contemporánea</div>
+<div class="subject">Inglés II</div>
+<div class="subject">Relaciones Internacionales I</div>
+<div class="subject">Teología I</div>
+<div class="subject">Análisis de Política Comparada</div>
+<div class="subject">Derecho Constitucional</div>
+<div class="subject">Derecho Internacional Público</div>
+<div class="subject">Economía Internacional</div>
+<div class="subject">Metodología de la Investigación Social I</div>
+<div class="subject">Teología II</div>
+
+</div>
+
+<div class="year y3">
+<h2>3° Año</h2>
+
+<div class="subject">Metodología de la Investigación Social II</div>
+<div class="subject">Organizaciones Internacionales</div>
+<div class="subject">Pensamiento Social Cristiano I</div>
+<div class="subject">Sistemas de Protección de los Derechos Humanos</div>
+<div class="subject">Sociología</div>
+<div class="subject">Teoría de las Relaciones Internacionales I</div>
+<div class="subject">Estrategia</div>
+<div class="subject">Negocios Internacionales</div>
+<div class="subject">Pensamiento Social Cristiano II</div>
+<div class="subject">Relaciones Internacionales II</div>
+<div class="subject">Teoría de las Relaciones Internacionales II</div>
+
+</div>
+
+<div class="year y4">
+<h2>4° Año</h2>
+
+<div class="subject">Formulación y Evaluación de Proyectos</div>
+<div class="subject">Geopolítica</div>
+<div class="subject">Política Exterior Argentina</div>
+<div class="subject">Sociología de las Organizaciones</div>
+<div class="subject">Ética Profesional</div>
+<div class="subject">Agenda Internacional</div>
+<div class="subject">Antropología Social</div>
+<div class="subject">Integración y Cooperación Internacional</div>
+<div class="subject">Taller de Trabajo Final</div>
+<div class="subject">Trabajo Final</div>
+
+</div>
+
+</div>
+
+<script>
+
+document.querySelectorAll(".subject").forEach(materia=>{
+materia.onclick=()=>{
+materia.classList.toggle("done")
+}
+})
+
+</script>
+
+</body>
+</html>
